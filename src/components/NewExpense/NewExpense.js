@@ -24,6 +24,7 @@ export default function NewExpense(props) {
 
     return (
         <div className="new-expense">
+            {/* No edit -> button displays, otherwise the new expense form shows up */}
             {!isEditing ? (
                 <button onClick={startEditingHandler}>Add New Expense</button>
             ) : (
